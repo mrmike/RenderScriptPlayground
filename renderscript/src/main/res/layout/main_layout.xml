@@ -12,7 +12,7 @@
         android:layout_height="0dp"/>
 
     <ImageView
-        android:id="@+id/blur_image_view"
+        android:id="@+id/rs_image_view"
         android:padding="5dp"
         android:layout_weight="1"
         android:layout_width="match_parent"
@@ -25,7 +25,7 @@
         android:gravity="center"
         android:textSize="18sp"
         android:layout_weight="1"
-        android:text="Your device does not support RenderScript."
+        android:text="@string/render_support_info"
         />
 
 

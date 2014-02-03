@@ -7,8 +7,28 @@ android {
     defaultConfig {
         minSdkVersion 8
         targetSdkVersion 19
+        renderscriptTargetApi 18
+        renderscriptSupportMode true
         versionCode 1
         versionName "1.0"
+    }
+
+    productFlavors {
+        x86 {
+            ndk {
+                abiFilter "x86"
+            }
+        }
+        arm {
+            ndk {
+                abiFilter "armeabi-v7a"
+            }
+        }
+        mips {
+            ndk {
+                abiFilter "mips"
+            }
+        }
     }
 }
 

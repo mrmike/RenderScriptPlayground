@@ -4,5 +4,7 @@
     <string name="app_name">RenderScriptPlayground</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="render_support_info">Your device does not support RenderScript.</string>
+    <string name="menu_change_title">Change effect</string>
 
 </resources>

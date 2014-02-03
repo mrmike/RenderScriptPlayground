@@ -31,12 +31,12 @@ ndk.dir=path/to/android/ndk
 
 ### 4. Installing app
 ```
-~$ ./gradlew installDebug
+~$ ./gradlew installArmDebug
 ```
 
 Example
 ------------
 
-![Image](./running_example.png?raw=true)
+![Image](./rs_blur_example.png?raw=true)![Image](./rs_mono_example.png?raw=true)
 
 Photo: http://www.flickr.com/photos/29468339@N02/4542603519
