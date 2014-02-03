@@ -37,11 +37,11 @@ public class MainActivity extends FragmentActivity {
         Bitmap outImage = image.copy(image.getConfig(), false);
         mImageView.setImageBitmap(image);
 
-        final boolean hasRenderSupport = hasRenderScriptSupport();
-        mBlurImageView.setVisibility(hasRenderSupport ? View.VISIBLE : View.GONE);
-        mSupportInfo.setVisibility(hasRenderSupport ? View.GONE : View.VISIBLE);
+        final boolean hasRSSupport = hasRenderScriptSupport();
+        mBlurImageView.setVisibility(hasRSSupport ? View.VISIBLE : View.GONE);
+        mSupportInfo.setVisibility(hasRSSupport ? View.GONE : View.VISIBLE);
 
-        if (hasRenderSupport) {
+        if (hasRSSupport) {
             final RenderScript renderScript = RenderScript.create(this);
             final Allocation input = Allocation.createFromBitmap(renderScript, image);
             final Allocation output = Allocation.createTyped(renderScript, input.getType());
